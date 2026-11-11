@@ -10,15 +10,16 @@ A proposta do EcoColeta será um sistema demonstrativo completo, com:
    
 A versão será preparada para apresentação acadêmica, com identidade visual própria, navegação interativa e dados fictícios identificados como demonstração. Também deverá deixar claras as funcionalidades implementadas no protótipo e aquelas que dependeriam de integração real, como GPS, banco de dados e sincronização entre usuários.
 
-
-1. Tela inicial
-Resumo das coletas, materiais registrados, metas e atividades do dia.
 <a class="brand"><img src="1.jpeg"></a>
-2. Mapa de coleta
+
+Tela inicial
+Resumo das coletas, materiais registrados, metas e atividades do dia.
+
+Mapa de coleta
 Cadastro de pontos de coleta e planejamento de rotas.
-<a class="brand"><img src="3.jpeg"></a>
-4. Registro de materiais
+
+Registro de materiais
 Informar tipo, quantidade e peso dos recicláveis recolhidos.
-<a class="brand"><img src="4.jpeg"></a>
-6. Relatórios
+
+Relatórios
 Histórico das coletas, produtividade e materiais acumulados.
