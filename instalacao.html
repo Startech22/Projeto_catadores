@@ -1,0 +1,305 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="Instalação, publicação e protótipos do aplicativo EcoColeta para catadores">
+<title>Instalação e Protótipos | EcoColeta</title>
+<style>
+:root{
+  --forest:#103f2b;--green:#218b45;--lime:#8bcf35;--mint:#eaf6e9;
+  --ink:#203329;--muted:#607267;--paper:#fbfdf9;--line:#dce9dc;
+}
+*{box-sizing:border-box}
+body{margin:0;font-family:Inter,Segoe UI,Arial,sans-serif;color:var(--ink);background:var(--paper);line-height:1.65}
+header{background:linear-gradient(120deg,#0d3827,#176b39 62%,#70b82e);color:#fff;padding:18px max(5vw,24px) 36px}
+nav{max-width:980px;margin:auto;display:flex;align-items:center;justify-content:space-between;gap:16px;flex-wrap:wrap}
+.brand{display:flex;align-items:center;gap:12px;color:#fff;text-decoration:none;font-weight:800;font-size:1.1rem}
+.brand img{width:48px;height:48px;border-radius:12px;object-fit:cover;background:#fff}
+nav a{color:#fff;text-decoration:none;opacity:.92;font-size:.92rem}
+main{max-width:980px;margin:auto;padding:40px 24px 80px}
+h1{color:var(--forest);font-size:clamp(1.8rem,4vw,2.2rem);margin:0 0 8px}
+.lead{color:var(--muted);margin-bottom:28px;max-width:820px}
+h2{color:var(--forest);font-size:1.35rem;margin:40px 0 14px;padding-bottom:6px;border-bottom:2px solid var(--lime)}
+h3{color:var(--forest);margin:0 0 8px}
+p{margin:0 0 12px}
+ul,ol{padding-left:1.25em;margin:0 0 12px}
+li{margin-bottom:8px}
+.card{background:#fff;border:1px solid var(--line);border-radius:16px;padding:22px 24px;margin:16px 0;box-shadow:0 6px 18px #183d2410}
+.notice{border-left:4px solid var(--lime);padding:14px 18px;background:#f3f9ed;border-radius:0 12px 12px 0;color:#405b45;margin:20px 0}
+.grid{display:grid;grid-template-columns:repeat(2,1fr);gap:18px;margin-top:18px}
+.grid-3{display:grid;grid-template-columns:repeat(3,1fr);gap:18px;margin-top:18px}
+.phone{
+  background:#10281c;border-radius:28px;padding:14px 12px 18px;
+  box-shadow:0 16px 40px #0a241866;color:#e8f6e9;max-width:280px;margin:0 auto;
+}
+.phone-bar{height:18px;display:flex;align-items:center;justify-content:center;margin-bottom:10px}
+.phone-bar span{width:80px;height:6px;border-radius:99px;background:#2d5a40}
+.screen{background:#f7fbf6;color:var(--ink);border-radius:18px;padding:14px;min-height:360px}
+.screen h4{margin:0 0 6px;font-size:1rem;color:var(--forest)}
+.screen .tag{display:inline-block;background:#e4f4d1;color:#285a2#285a2d;border-radius:999px;padding:3px 10px;font-size:.75rem;font-weight:700;margin-bottom:10px}
+.metric{display:flex;justify-content:space-between;gap:8px;margin:10px 0}
+.metric div{flex:1;background:#fff;border:1px solid var(--line);border-radius:12px;padding:10px;text-align:center}
+.metric strong{display:block;color:var(--green);font-size:1.1rem}
+.metric span{font-size:.75rem;color:var(--muted)}
+.list-item{background:#fff;border:1px solid var(--line);border-radius:12px;padding:10px 12px;margin-top:8px;font-size:.9rem}
+.btn-demo{display:block;width:100%;margin-top:12px;background:var(--green);color:#fff;border:none;border-radius:12px;padding:10px;font-weight:700;text-align:center}
+.img-proto{width:100%;border-radius:16px;border:1px solid var(--line);display:block;background:#fff}
+.caption{font-size:.9rem;color:var(--muted);margin-top:8px;text-align:center}
+code,pre{font-family:ui-monospace,SFMono-Regular,Menlo,Consolas,monospace}
+pre{background:#10281c;color:#e8f6e9;padding:16px;border-radius:12px;overflow:auto;font-size:.88rem}
+a.inline{color:var(--green);font-weight:700;text-decoration:none}
+a.inline:hover{text-decoration:underline}
+footer{background:var(--forest);color:#e6f3e8;padding:28px 24px;text-align:center}
+footer p{margin:5px}
+@media(max-width:800px){.grid,.grid-3{grid-template-columns:1fr}}
+</style>
+</head>
+<body>
+<header>
+  <nav>
+    <a class="brand" href="index.html"><img src="logo-ecocoleta.png" alt="EcoColeta">EcoColeta</a>
+    <a href="index.html">← Voltar ao projeto</a>
+  </nav>
+</header>
+
+<main>
+  <h1>Instalação e protótipos do aplicativo</h1>
+  <p class="lead">
+    Esta página descreve como publicar o site no GitHub Pages e apresenta os protótipos de interface
+    pensados para o dia a dia dos <strong>catadores e cooperativas</strong>.
+  </p>
+
+  <div class="notice">
+    <strong>Importante:</strong> o EcoColeta ainda é uma proposta acadêmica/demonstrativa.
+    Não há backend, GPS real, autenticação ou sincronização entre dispositivos nesta versão.
+  </div>
+
+  <!-- ===================== INSTALAÇÃO ===================== -->
+  <h2>1. Como publicar no GitHub Pages</h2>
+  <div class="card">
+    <h3>Pré-requisitos</h3>
+    <ul>
+      <li>Conta no GitHub</li>
+      <li>Repositório do projeto (ex.: <code>Startech22/Projeto_catadores</code>)</li>
+      <li>Arquivos do site na raiz: <code>index.html</code>, páginas de documentação e imagens</li>
+    </ul>
+  </div>
+
+  <div class="card">
+    <h3>Passo a passo</h3>
+    <ol>
+      <li>Envie os arquivos para a branch <code>main</code> (ou <code>master</code>).</li>
+      <li>No GitHub, abra o repositório → <strong>Settings</strong> → <strong>Pages</strong>.</li>
+      <li>Em <strong>Source</strong>, escolha a branch <code>main</code> e a pasta <code>/ (root)</code>.</li>
+      <li>Clique em <strong>Save</strong>.</li>
+      <li>Aguarde 1–2 minutos e acesse:<br>
+        <code>https://startech22.github.io/Projeto_catadores/</code>
+      </li>
+    </ol>
+  </div>
+
+  <div class="card">
+    <h3>Recomendação para site estático</h3>
+    <p>Crie na raiz um arquivo vazio chamado <code>.nojekyll</code>. Isso evita que o Jekyll altere seus arquivos HTML.</p>
+    <pre>touch .nojekyll
+git add .nojekyll
+git commit -m "Desativa Jekyll no GitHub Pages"
+git push</pre>
+  </div>
+
+  <!-- ===================== ESCOPO DO PROTÓTIPO ===================== -->
+  <h2>2. Escopo do protótipo para catadores</h2>
+  <p>O protótipo prioriza telas simples, legíveis no celular e úteis na rotina de coleta:</p>
+  <div class="grid">
+    <div class="card">
+      <h3>Para o catador</h3>
+      <ul>
+        <li>Ver solicitações próximas</li>
+        <li>Organizar a rota do dia</li>
+        <li>Registrar materiais e pesos</li>
+        <li>Acompanhar histórico e ganhos estimados</li>
+      </ul>
+    </div>
+    <div class="card">
+      <h3>Para a cooperativa</h3>
+      <ul>
+        <li>Visão geral das coletas</li>
+        <li>Distribuição de demandas</li>
+        <li>Registro consolidado de materiais</li>
+        <li>Relatórios simples de produtividade</li>
+      </ul>
+    </div>
+  </div>
+
+  <!-- ===================== PROTÓTIPOS VISUAIS ===================== -->
+  <h2>3. Protótipos de telas do aplicativo</h2>
+  <p>Representações de baixa/média fidelidade das principais telas para catadores:</p>
+
+  <div class="grid-3">
+    <!-- Tela 1 -->
+    <div>
+      <div class="phone">
+        <div class="phone-bar"><span></span></div>
+        <div class="screen">
+          <span class="tag">Catador</span>
+          <h4>Painel do dia</h4>
+          <p style="font-size:.88rem;color:#607267;margin:0 0 10px">Resumo rápido antes de sair para a coleta.</p>
+          <div class="metric">
+            <div><strong>5</strong><span>solicitações</span></div>
+            <div><strong>12 km</strong><span>rota</span></div>
+            <div><strong>48 kg</strong><span>meta</span></div>
+          </div>
+          <div class="list-item">📍 Condomínio Solar — papel/plástico</div>
+          <div class="list-item">📍 Mercado Central — papelão</div>
+          <div class="list-item">📍 Escola Municipal — pet</div>
+          <div class="btn-demo">Iniciar rota</div>
+        </div>
+      </div>
+      <p class="caption">Tela inicial do catador</p>
+    </div>
+
+    <!-- Tela 2 -->
+    <div>
+      <div class="phone">
+        <div class="phone-bar"><span></span></div>
+        <div class="screen">
+          <span class="tag">Coleta</span>
+          <h4>Mapa e rota</h4>
+          <p style="font-size:.88rem;color:#607267;margin:0 0 10px">Ordem sugerida dos pontos do dia.</p>
+          <div class="list-item"><strong>1.</strong> Rua das Flores, 120</div>
+          <div class="list-item"><strong>2.</strong> Av. Brasil, 890</div>
+          <div class="list-item"><strong>3.</strong> Rua Paraná, 45</div>
+          <div class="list-item"><strong>4.</strong> Cooperativa (retorno)</div>
+          <div style="margin-top:14px;background:#eaf6e9;border-radius:12px;padding:12px;font-size:.88rem">
+            Distância total estimada: <strong>12 km</strong><br>
+            Tempo estimado: <strong>3h20</strong>
+          </div>
+          <div class="btn-demo">Ver no mapa</div>
+        </div>
+      </div>
+      <p class="caption">Organização de rotas</p>
+    </div>
+
+    <!-- Tela 3 -->
+    <div>
+      <div class="phone">
+        <div class="phone-bar"><span></span></div>
+        <div class="screen">
+          <span class="tag">Registro</span>
+          <h4>Materiais coletados</h4>
+          <p style="font-size:.88rem;color:#607267;margin:0 0 10px">Lançamento rápido no ponto de coleta.</p>
+          <div class="list-item">📄 Papel / papelão — <strong>18 kg</strong></div>
+          <div class="list-item">🧴 Plástico PET — <strong>9 kg</strong></div>
+          <div class="list-item">🥫 Metal — <strong>4 kg</strong></div>
+          <div class="list-item">🍾 Vidro — <strong>6 kg</strong></div>
+          <div style="margin-top:14px;background:#eaf6e9;border-radius:12px;padding:12px;font-size:.88rem">
+            Total do ponto: <strong>37 kg</strong><br>
+            Valor estimado: <strong>R$ 42,00</strong>
+          </div>
+          <div class="btn-demo">Salvar coleta</div>
+        </div>
+      </div>
+      <p class="caption">Registro de materiais</p>
+    </div>
+  </div>
+
+  <div class="grid" style="margin-top:24px">
+    <!-- Tela 4 -->
+    <div>
+      <div class="phone">
+        <div class="phone-bar"><span></span></div>
+        <div class="screen">
+          <span class="tag">Solicitações</span>
+          <h4>Pedidos disponíveis</h4>
+          <div class="list-item">
+            <strong>Condomínio Parque Verde</strong><br>
+            <span style="color:#607267;font-size:.85rem">Papel e plástico · 2,1 km</span>
+          </div>
+          <div class="list-item">
+            <strong>Restaurante Bom Prato</strong><br>
+            <span style="color:#607267;font-size:.85rem">Óleo e papelão · 3,4 km</span>
+          </div>
+          <div class="list-item">
+            <strong>Loja de Embalagens</strong><br>
+            <span style="color:#607267;font-size:.85rem">Papelão · 1,0 km</span>
+          </div>
+          <div class="btn-demo">Aceitar solicitação</div>
+        </div>
+      </div>
+      <p class="caption">Lista de oportunidades de coleta</p>
+    </div>
+
+    <!-- Tela 5 -->
+    <div>
+      <div class="phone">
+        <div class="phone-bar"><span></span></div>
+        <div class="screen">
+          <span class="tag">Relatórios</span>
+          <h4>Resumo da semana</h4>
+          <div class="metric">
+            <div><strong>186 kg</strong><span>coletados</span></div>
+            <div><strong>14</strong><span>atendimentos</span></div>
+          </div>
+          <div class="list-item">Segunda — 32 kg</div>
+          <div class="list-item">Terça — 28 kg</div>
+          <div class="list-item">Quarta — 41 kg</div>
+          <div class="list-item">Quinta — 35 kg</div>
+          <div class="list-item">Sexta — 50 kg</div>
+          <div class="btn-demo">Exportar resumo</div>
+        </div>
+      </div>
+      <p class="caption">Histórico e produtividade</p>
+    </div>
+  </div>
+
+  <!-- ===================== IMAGENS DO REPOSITÓRIO ===================== -->
+  <h2>4. Imagens de referência do projeto</h2>
+  <p>Imagens já presentes no repositório, úteis para a documentação visual:</p>
+  <div class="grid-3">
+    <div>
+      <img class="img-proto" src="1.jpeg" alt="Referência visual 1 do protótipo EcoColeta">
+      <p class="caption">Referência 1</p>
+    </div>
+    <div>
+      <img class="img-proto" src="3.jpeg" alt="Referência visual 3 do protótipo EcoColeta">
+      <p class="caption">Referência 3</p>
+    </div>
+    <div>
+      <img class="img-proto" src="4.jpeg" alt="Referência visual 4 do protótipo EcoColeta">
+      <p class="caption">Referência 4</p>
+    </div>
+  </div>
+
+  <!-- ===================== MÓDULOS ===================== -->
+  <h2>5. Módulos previstos no protótipo</h2>
+  <div class="card">
+    <ol>
+      <li><strong>Painel inicial</strong> — indicadores, coletas do dia e solicitações pendentes.</li>
+      <li><strong>Solicitações</strong> — pedidos de coleta, busca e acompanhamento.</li>
+      <li><strong>Coletas e rotas</strong> — organização de pontos e atualização de status.</li>
+      <li><strong>Materiais</strong> — registro de papel, plástico, metal, vidro e quantidades.</li>
+      <li><strong>Relatórios</strong> — histórico, indicadores e exportação simples.</li>
+      <li><strong>Comunidade</strong> — mural de informações e colaboração.</li>
+      <li><strong>Perfil</strong> — dados do catador ou da cooperativa.</li>
+    </ol>
+  </div>
+
+  <div class="notice">
+    As telas acima são protótipos de interface para apresentação acadêmica, com dados fictícios.
+    Funcionalidades reais (login, GPS, banco de dados e sincronização) ainda precisam ser desenvolvidas.
+  </div>
+
+  <p style="margin-top:36px">
+    <a class="inline" href="index.html">← Voltar à página principal</a> ·
+    <a class="inline" href="prototipo.html">Ver página de protótipo</a> ·
+    <a class="inline" href="requisitos.html">Ver requisitos</a>
+  </p>
+</main>
+
+<footer>
+  <p><strong>EcoColeta</strong> · Conectando pessoas, preservando o futuro.</p>
+  <p>Projeto acadêmico · Gestão da Tecnologia da Informação · 2026.02</p>
+</footer>
+</body>
+</html>
