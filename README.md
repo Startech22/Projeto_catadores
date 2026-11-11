@@ -21,5 +21,4 @@ O site distingue a proposta do que está efetivamente implementado. Os resultado
 ## Publicação
 Consulte [`docs/instalacao.md`](docs/instalacao.md) para publicar gratuitamente com GitHub Pages.
 
-## Antes de entregar
-Complete os dados da equipe, instituição/câmpus e evidências reais de desenvolvimento e validação.
+
