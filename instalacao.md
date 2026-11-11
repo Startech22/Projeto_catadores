@@ -14,9 +14,11 @@ A versão será preparada para apresentação acadêmica, com identidade visual 
 1. Tela inicial
 Resumo das coletas, materiais registrados, metas e atividades do dia.
 <a class="brand"><img src="1.jpeg"></a>
-3. Mapa de coleta
+2. Mapa de coleta
 Cadastro de pontos de coleta e planejamento de rotas.
+<a class="brand"><img src="3.jpeg"></a>
 4. Registro de materiais
 Informar tipo, quantidade e peso dos recicláveis recolhidos.
-5. Relatórios
+<a class="brand"><img src="4.jpeg"></a>
+6. Relatórios
 Histórico das coletas, produtividade e materiais acumulados.
