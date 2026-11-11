@@ -33,7 +33,6 @@ footer{background:var(--forest);color:#e6f3e8;padding:28px 24px;text-align:cente
 <main>
   <h1>Evolução e continuidade</h1>
   <p class="lead">Próximas etapas para validação, desenvolvimento e continuidade do projeto.</p>
-
   <h2>Próximas etapas sugeridas</h2>
   <div class="card">
     <ol>
@@ -46,7 +45,6 @@ footer{background:var(--forest);color:#e6f3e8;padding:28px 24px;text-align:cente
       <li>Medir resultados com indicadores definidos em conjunto com os participantes.</li>
     </ol>
   </div>
-
   <h2>Indicadores possíveis</h2>
   <div class="card">
     <ul>
@@ -57,11 +55,9 @@ footer{background:var(--forest);color:#e6f3e8;padding:28px 24px;text-align:cente
       <li>Satisfação e facilidade de uso relatadas pelos catadores</li>
     </ul>
   </div>
-
   <div class="notice">
     Os indicadores só devem ser divulgados após coleta e validação de dados reais.
   </div>
-
   <a class="back" href="index.html">← Voltar à página principal</a>
 </main>
 <footer>
