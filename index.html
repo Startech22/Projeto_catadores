@@ -1,141 +1,50 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title> Projeto Catadores - Valorizando quem recicla</title>
-  <style>
-    *{
-      margin: 0;
-      padding: 0;
-      box-sizing: border-box;
-    }
-    body{
-      font-family: Arial, Helvetia, sans-serif;
-      line-height: 1.6;
-      color: #333;
-      background-color: #f4f9f4;
-    }
-    header {
-      background-color: #2e7d32;
-      color: white;
-      padding: 40px 20px;
-      text-align: center;
-    }    
-    header h1 {
-      font-size: 1.2rem;
-      opacity: 0.9;
-    }
-    header p {
-      font-size: 1.2rem;
-      opacity: 0.9;
-    }
-    nav {
-      background-color: #1b5e20;
-      padding: 12px;
-      text-align: center;
-    }      
-    nav a {
-      color: white;
-      text-decoration: none;
-      margin: 0 15px;
-      font-weight: bold;
-    }
-    nav a:hover {
-      text-decoration: underline;
-    }
-    main {
-      max-width: 900px;
-      margin: 40px auto;
-      padding: 0 20 px;
-    }
-    section {
-      background: white;
-      padding: 30 px;
-      margin-bottom: 25px;
-      border-radius: 10px;
-      box-shadow: 0 20px 8px rgba(0,0,0,0.1);
-    }
-    section h2 {
-      color: #2e7d32;
-      margin-bottom: 15px;
-      border-bottom: 2px solid #c8e6c9;
-      padding-bottom: 8px;
-    }
-    ul {
-      margin-left: 20px;
-      margin-top: 10px;
-    }
-    li {
-      margin-bottom: 8px;
-    }
-    footer {
-      background-color: #1b5e20;
-      color: white;
-      text-align: center;
-      padding: 20px;
-      margin-top: 40px;
-    }
-    .destaque {
-      background-color: #e8f5e9;
-      padding: 15px;
-      border-left: 5px solid #2e7d32;
-      margin: 15px 0;
-    }
-    </style>    
-</head>
-  <body>
-
-    <header>
-      <h1> Projeto Catadores</h1>
-      <p>Valorizando o trabalho de quem transforma o lixo em recurso</p>
-    </header>
-
-    <nav>
-      <a href="#sobre">Sobre</a>
-      <a href="#importancia">Importância</a>
-      <a href="objetivos">Objetivos</a>
-      <a href="#contato">Contato</a>
-    </nav>
-
-    <main>
-      <section id="sobre">
-        <h2>Sobre o Projeto</h2>
-        <p>
-          Este projeto tem como objetivo dar visibilidade e valorizar o trabalho dos <strong>Catadores de materiais recicláveis</strong>,
-          profissionais essenciais para a sustentabilidade e a economia circular.
-        </p>
-          <div class="destaque">
-          Os Catadores são responsáveis por grande parte da reciclagem no país,
-            contribuindo diretamente para a redução de resíduos e a preservação do meio ambiente.
-          </div>
-      </section>
-
-      <section id="importancia">
-        <h2> Por que os Catadores são importantes?</h2>
-        <ul>
-          <li> Realizam a coleta seletiva de forma prática e eficiente</li>
-          <li> Geram renda a partir de materiais que seriam descartados</li>
-          <li> Reduzem o volume de lixo nos aterros sanitários</li>
-          <li> Contribuem para a economia circular e a sustentabilidade</li>
-          <li> Merecem reconhecimento, respeito e melhores condições de trabalho</li>
-        </ul>
-      </section>
-
-      <section id="objetivos">
-        <h2>Objetivos do Projeto</h2>
-        <ul>
-          <li> Sensibilizar a sociedade sobre a importância dos Catadores </li>
-          <li> Promover o reconhecimento e a valorização desses profissionais</li>
-          <li> Incentivar a separação correta dos resíduos recicláveis</li>
-          <li> Apoiar ações que melhorem as condições de trabalho dos Catadores</li>
-        </ul>
-      </section> 
-    </main>
-
-    <footer>
-      <p>&copy; 2026 - Projeto Catadores de Materiais Recicláveis</p>
-    </footer>
-  </body>
-  </html>
-  
+<meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="EcoColeta — solução tecnológica para conectar pessoas, catadores e materiais recicláveis.">
+<title>EcoColeta | Projeto Interdisciplinar</title>
+<style>
+:root{--forest:#103f2b;--green:#218b45;--lime:#8bcf35;--mint:#eaf6e9;--ink:#203329;--muted:#607267;--paper:#fbfdf9;--line:#dce9dc}
+*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;font-family:Inter,Segoe UI,Arial,sans-serif;color:var(--ink);background:var(--paper);line-height:1.65}
+header{background:linear-gradient(120deg,#0d3827,#176b39 62%,#70b82e);color:white;padding:18px max(5vw,24px) 72px}
+nav{max-width:1160px;margin:auto;display:flex;align-items:center;justify-content:space-between;gap:20px;flex-wrap:wrap}
+.brand{display:flex;align-items:center;gap:12px;color:white;text-decoration:none;font-weight:800;font-size:1.15rem}.brand img{width:62px;height:62px;object-fit:cover;object-position:center 65%;border-radius:14px;background:#fff}
+nav ul{display:flex;gap:20px;list-style:none;padding:0;margin:0;flex-wrap:wrap}nav a{color:white;text-decoration:none;font-size:.92rem;opacity:.95}nav a:hover{text-decoration:underline}
+.hero{max-width:1160px;margin:58px auto 0;display:grid;grid-template-columns:1.2fr .8fr;gap:40px;align-items:center}.eyebrow{letter-spacing:.14em;text-transform:uppercase;font-size:.78rem;font-weight:800;color:#c9f49a}.hero h1{font-size:clamp(2.5rem,5vw,4.7rem);line-height:1.05;margin:12px 0 20px;max-width:720px}.hero p{font-size:1.15rem;max-width:650px;color:#e8f6e9}.hero-art{background:#fff;border-radius:28px;padding:12px;box-shadow:0 24px 60px #092b1c66}.hero-art img{width:100%;display:block;border-radius:20px}
+.btn{display:inline-block;margin-top:18px;background:#d4f28b;color:#173e26;padding:12px 20px;border-radius:999px;text-decoration:none;font-weight:800}
+main{max-width:1160px;margin:auto;padding:0 24px}.section{padding:68px 0}.section h2{font-size:2rem;color:var(--forest);line-height:1.2;margin:0 0 14px}.lead{color:var(--muted);max-width:820px}.grid{display:grid;grid-template-columns:repeat(3,1fr);gap:18px;margin-top:26px}.card{background:white;border:1px solid var(--line);border-radius:18px;padding:24px;box-shadow:0 8px 24px #183d2410}.card h3{margin:8px 0;color:var(--forest)}.symbol{width:42px;height:42px;border-radius:13px;background:var(--mint);display:grid;place-items:center;color:var(--green);font-size:1.35rem;font-weight:900}
+.band{background:var(--mint);border-block:1px solid var(--line)}.stats{display:grid;grid-template-columns:repeat(4,1fr);gap:14px;margin-top:25px}.stat{background:#fff;border-radius:16px;padding:20px;border:1px solid var(--line)}.stat strong{display:block;color:var(--green);font-size:2rem;line-height:1.2}.stat span{font-size:.92rem;color:var(--muted)}
+.two{display:grid;grid-template-columns:1fr 1fr;gap:30px;align-items:center}.pill{display:inline-block;background:#e4f4d1;color:#285a2d;border-radius:999px;padding:5px 12px;font-size:.8rem;font-weight:800}
+a.inline{color:var(--green);font-weight:700}.notice{border-left:4px solid var(--lime);padding:14px 18px;background:#f3f9ed;border-radius:0 12px 12px 0;color:#405b45}
+footer{background:var(--forest);color:#e6f3e8;padding:34px 24px;text-align:center}footer p{margin:5px}
+@media(max-width:800px){.hero,.two{grid-template-columns:1fr}.hero{margin-top:38px}.hero-art{max-width:540px}.grid{grid-template-columns:1fr 1fr}.stats{grid-template-columns:1fr 1fr}nav ul{gap:12px}}
+@media(max-width:520px){.grid{grid-template-columns:1fr}.stats{grid-template-columns:1fr 1fr}.hero h1{font-size:2.6rem}}
+</style></head>
+<body>
+<header>
+<nav><a class="brand" href="#"><img src="assets/logo-ecocoleta.png" alt="Logotipo EcoColeta"><span>EcoColeta</span></a>
+<ul><li><a href="#projeto">Projeto</a></li><li><a href="#solucao">Solução</a></li><li><a href="#pesquisa">Pesquisa</a></li><li><a href="#equipe">Equipe</a></li><li><a href="#documentacao">Documentação</a></li></ul></nav>
+<div class="hero"><div><div class="eyebrow">Projeto Interdisciplinar I · GTI · 2026.02</div><h1>Conectando pessoas, preservando o futuro.</h1><p>Uma proposta tecnológica para aproximar catadores, comunidades e geradores de materiais recicláveis, contribuindo para uma coleta mais organizada, segura e valorizada.</p><a class="btn" href="#solucao">Conheça a proposta ↓</a></div>
+<div class="hero-art"><img src="assets/logo-ecocoleta.png" alt="Identidade visual EcoColeta com reciclagem, catador e referências urbanas de Curitiba"></div></div>
+</header>
+<main>
+<section class="section" id="projeto"><span class="pill">Sobre o projeto</span><h2>Tecnologia a serviço da reciclagem e das pessoas</h2><p class="lead">O EcoColeta é uma proposta acadêmica que investiga como recursos de Tecnologia da Informação podem apoiar o trabalho de catadores de materiais recicláveis. O foco é facilitar a conexão entre quem tem materiais recicláveis e quem realiza a coleta, além de apoiar a organização das atividades.</p>
+<div class="grid"><article class="card"><div class="symbol">♻</div><h3>Propósito</h3><p>Contribuir para uma cadeia de reciclagem mais acessível, organizada e transparente.</p></article><article class="card"><div class="symbol">◎</div><h3>Público envolvido</h3><p>Catadores, cooperativas, moradores, condomínios, comércios e instituições.</p></article><article class="card"><div class="symbol">↗</div><h3>Direção</h3><p>Desenvolver e validar funcionalidades a partir das necessidades reais dos trabalhadores.</p></article></div></section>
+<section class="section band" id="problema"><h2>O problema que queremos enfrentar</h2><p class="lead">A coleta de recicláveis pode envolver esforço físico intenso, dificuldades de transporte, baixa remuneração, informalidade, insegurança e pouca organização logística. A falta de informação também dificulta conectar materiais disponíveis aos catadores que poderiam recolhê-los.</p><div class="grid"><article class="card"><h3>Desafios do trabalho</h3><p>Condições de trabalho, transporte e reconhecimento profissional aparecem entre os pontos de atenção identificados na pesquisa exploratória.</p></article><article class="card"><h3>Oportunidade de conexão</h3><p>Facilitar o contato entre catadores e locais que geram materiais recicláveis pode reduzir barreiras para a coleta.</p></article><article class="card"><h3>Informação organizada</h3><p>Registros simples de coletas, materiais, pesos e destinos podem apoiar o planejamento e a tomada de decisão.</p></article></div></section>
+<section class="section" id="solucao"><h2>A solução proposta</h2><p class="lead">Uma plataforma digital com funcionalidades planejadas para apoiar a rotina da coleta seletiva. O escopo poderá evoluir conforme a validação com catadores e cooperativas.</p><div class="grid">
+<article class="card"><div class="symbol">⌖</div><h3>Pontos e solicitações</h3><p>Cadastro de pontos geradores e registro de solicitações ou oportunidades de coleta.</p></article>
+<article class="card"><div class="symbol">➤</div><h3>Organização de rotas</h3><p>Planejamento básico de trajetos e visualização dos locais de coleta.</p></article>
+<article class="card"><div class="symbol">▤</div><h3>Registro de materiais</h3><p>Controle de tipos, quantidades, pesos e valores dos materiais coletados.</p></article>
+<article class="card"><div class="symbol">⇄</div><h3>Conexão entre participantes</h3><p>Aproximação entre catadores, cooperativas, moradores e estabelecimentos.</p></article>
+<article class="card"><div class="symbol">✓</div><h3>Transparência</h3><p>Informações sobre o andamento e a destinação das coletas, conforme viabilidade.</p></article>
+<article class="card"><div class="symbol">▧</div><h3>Indicadores</h3><p>Relatórios simples para acompanhar atividades e apoiar decisões.</p></article></div>
+<p class="notice"><strong>Estado atual:</strong> esta página apresenta a proposta e os resultados da pesquisa. Funcionalidades operacionais, integração com GPS, banco de dados e sincronização precisam ser desenvolvidas e testadas; não são apresentadas como recursos já implementados.</p></section>
+<section class="section band" id="pesquisa"><h2>Pesquisa exploratória</h2><p class="lead">Um questionário online reuniu 134 respostas entre 25 de agosto e 1º de outubro de 2026. Os resultados ajudam a orientar a proposta, mas não representam necessariamente toda a população e ainda precisam ser complementados com escuta direta de catadores e cooperativas.</p>
+<div class="stats"><div class="stat"><strong>134</strong><span>respostas recebidas</span></div><div class="stat"><strong>67,9%</strong><span>avaliaram que o trabalho dos catadores não é devidamente valorizado</span></div><div class="stat"><strong>71,6%</strong><span>consideraram útil conectar catadores a condomínios, comércios e indústrias</span></div><div class="stat"><strong>91,8%</strong><span>utilizariam ou talvez utilizariam um app para solicitar coleta</span></div></div>
+<p><a class="inline" href="pesquisa/analise-da-pesquisa.pdf">Acessar relatório completo da pesquisa (PDF)</a> · <a class="inline" href="docs/pesquisa-resultados.md">Ver resultados detalhados</a></p></section>
+<section class="section" id="equipe"><h2>Equipe e contribuições</h2><p class="lead">Espaço destinado à identificação dos integrantes e à descrição das contribuições efetivamente realizadas por cada pessoa.</p><div class="notice">Antes da publicação, inserir os nomes completos dos integrantes, instituição/câmpus e as responsabilidades reais de cada participante. Não atribuir tarefas sem confirmação da equipe.</div></section>
+<section class="section band" id="demonstracao"><h2>Demonstração e tecnologias</h2><div class="two"><div><p class="lead">A demonstração do protótipo deve deixar claro o que pode ser testado hoje e o que ainda é uma evolução planejada.</p><p><strong>Estado do protótipo:</strong> incluir aqui o endereço da demonstração funcional quando a versão atual estiver revisada e publicada.</p><p class="notice">Não há, neste pacote, integração real com GPS, backend, banco de dados ou sincronização entre dispositivos. Evite apresentar telas ilustrativas como sistema operacional em produção.</p></div><div class="card"><h3>Tecnologias e recursos previstos</h3><p>HTML, CSS e JavaScript para prototipação da interface; Git e GitHub para versionamento e publicação; evolução futura para serviços de dados, autenticação e recursos de geolocalização, após definição dos requisitos.</p></div></div></section>
+<section class="section" id="documentacao"><h2>Documentação do projeto</h2><div class="grid"><article class="card"><h3>Requisitos</h3><p>Funcionalidades esperadas, requisitos não funcionais e casos de uso.</p><a class="inline" href="docs/requisitos.md">Abrir documentação</a></article><article class="card"><h3>Arquitetura</h3><p>Visão da estrutura proposta, componentes e limitações da versão atual.</p><a class="inline" href="docs/arquitetura.md">Abrir documentação</a></article><article class="card"><h3>Instalação e publicação</h3><p>Orientações para executar localmente e publicar no GitHub Pages.</p><a class="inline" href="docs/instalacao.md">Abrir documentação</a></article><article class="card"><h3>Evolução</h3><p>Próximas etapas para validação, desenvolvimento e continuidade.</p><a class="inline" href="docs/evolucao.md">Abrir documentação</a></article><article class="card"><h3>Pesquisa</h3><p>Metodologia, indicadores e interpretação dos resultados.</p><a class="inline" href="docs/pesquisa-resultados.md">Abrir documentação</a></article></div></section>
+</main><footer><p><strong>EcoColeta</strong> · Conectando pessoas, preservando o futuro.</p><p>Projeto acadêmico · Gestão da Tecnologia da Informação · 2026.02</p></footer>
+</body></html>
