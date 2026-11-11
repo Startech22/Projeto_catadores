@@ -1,4 +1,4 @@
-img src="logo-ecocoleta.png"
+<img src="logo-ecocoleta.png" alt="Logotipo EcoColeta">
 
 # EcoColeta
 
