@@ -2,7 +2,9 @@
 
 **Conectando pessoas, preservando o futuro.**
 
-Portfólio público do Projeto Interdisciplinar I — Gestão da Tecnologia da Informação (2026.02).
+Portfólio público do Projeto Interdisciplinar I — Gestão da Tecnologia da Informação (2026.02).  
+**Integrante informada:** Alessandra Ribas.  
+**Instituição:** Instituto Federal do Paraná (IFPR) — Campus Pinhais.
 
 ## Conteúdo
 - `index.html`: página pública do projeto.
