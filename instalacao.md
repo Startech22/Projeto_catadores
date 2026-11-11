@@ -13,8 +13,7 @@ A versão será preparada para apresentação acadêmica, com identidade visual 
 
 1. Tela inicial
 Resumo das coletas, materiais registrados, metas e atividades do dia.
-<img src="1.jpeg">
-<a class="brand" href="#"><img src="1.jpeg"></a>
+<a class="brand"><img src="1.jpeg"></a>
 3. Mapa de coleta
 Cadastro de pontos de coleta e planejamento de rotas.
 4. Registro de materiais
