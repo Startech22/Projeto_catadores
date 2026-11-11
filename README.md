@@ -1,3 +1,5 @@
+img src="logo-ecocoleta.png"
+
 # EcoColeta
 
 **Conectando pessoas, preservando o futuro.**
